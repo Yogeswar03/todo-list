@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+body{
+    background: linear-gradient(180deg, #a4161a,#4e085f);
+}
+
+.container{
+
+    min-height: 30vh;
+    width: 28%;
+    
+    background-color: azure;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: 450px;
+    display: flex;
+    margin-bottom: 300px;
+    box-sizing: border-box;
+    font-family: 'verdana', 'sans-serif';
+    
+}
+
+#heading{
+    padding: 20px 20px 20px 20px;
+    max-width: 540px;
+    width: 100%;
+   
+}
+
+    
+h2{
+    font-size: 35px;
+    margin-top: -10px;
+}
+
+img{
+    height: 27px;
+    width: 27px;
+    margin-top: 10px;
+    
+    
+}
+
+.add{
+   
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; 
+    margin-bottom: 20px;
+}
+
+input{
+    width: 220px;
+    border-radius: 6px ;
+    border: 1px solid rgb(167, 166, 163);
+    
+
+}
+
+button{
+    height: 38px;
+    width: 80px;
+    border-radius: 18px;
+    background-color: #451f55;
+    color: azure;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: -3px;
+
+}
+
+button:active{
+    background-color: #51385d;
+    border: #451f55;
+}
+
+ul li{
+    list-style: none;
+    padding: 20px 8px 10px 30px;
+    font-size: 18px;
+    position: relative;
+    user-select: none;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-image:url(./uncheck.png) ;
+    background-size: cover;
+    background-position: center;
+    top: 19px;
+    left: 3px;
+}
+
+ul li.checked{
+    
+    color: #451f55;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(./checked.png);
+    background-size: contain;
+}
+
+ul li span{
+
+    position: absolute;
+    right: 0;
+    font-size: 30px;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    color: #4e085f;
+}
+
+
+
+
+
+
